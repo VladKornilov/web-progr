@@ -176,55 +176,50 @@
         </div>
     </div>
 
-    <div class="task-4" hidden>
+    <div class="task-4" >
         <table>
             <tr>
                 <th>Семестр</th><th>№ п/п</th><th>Дисциплина</th><th>Форма контроля</th><th>Оценка</th><th>Преподаватель</th>
             </tr>
             <tr>
-                <td>1</td><td>1</td><td>Введение в математику</td><td>Зачет</td><td>+</td><td>Кацуба В.С.</td>
+                <td rowspan=3>1</td><td>1</td><td>Введение в математику</td><td>Зачет</td><td>+</td><td>Кацуба В.С.</td>
             </tr>
             <tr>
-                <td></td><td>2</td><td>Основы программирования</td><td>Зачет с оценкой</td><td>5</td><td>Скрябин А.В.</td>
+                <td>2</td><td>Основы программирования</td><td>Зачет с оценкой</td><td>5</td><td>Скрябин А.В.</td>
             </tr>
             <tr>
-                <td></td><td>3</td><td>Алгебра и геометрия</td><td>Зачет</td><td>+</td><td>Богомолов Р.А.</td>
+                <td>3</td><td>Алгебра и геометрия</td><td>Зачет</td><td>+</td><td>Богомолов Р.А.</td>
+            </tr>
+            <tr height="20"></tr>
+            <tr>
+                <td rowspan=3>2</td><td>1</td><td>Мат. анализ</td><td>Экзамен</td><td>4</td><td>Кацуба В.С.</td>
             </tr>
             <tr>
-                <td>_</td>
+                <td>2</td><td>Программирование</td><td>Зачет</td><td>+</td><td>Романовская Ю.В.</td>
             </tr>
             <tr>
-                <td>2</td><td>1</td><td>Мат. анализ</td><td>Экзамен</td><td>4</td><td>Кацуба В.С.</td>
+                <td>3</td><td>Дискретная математика</td><td>Экзамен</td><td>4</td><td>Богомолов Р.А.</td>
+            </tr>
+            <tr height="20"></tr>
+            <tr>
+                <td rowspan=3>3</td><td>1</td><td>Доп.разделы мат.анализа</td><td>Экзамен</td><td>4</td><td>Кацуба В.С.</td>
             </tr>
             <tr>
-                <td></td><td>2</td><td>Программирование</td><td>Зачет</td><td>+</td><td>Романовская Ю.В.</td>
+                <td>2</td><td>Программирование</td><td>Экзамен</td><td>5</td><td>Шиманский С.А.</td>
             </tr>
             <tr>
-                <td></td><td>3</td><td>Дискретная математика</td><td>Экзамен</td><td>4</td><td>Богомолов Р.А.</td>
+                <td>3</td><td>Мат. логика</td><td>Экзамен</td><td>5</td><td>Жулина О.И.</td>
+            </tr>
+                
+            <tr height="20"></tr>
+            <tr>
+                <td rowspan=3>4</td><td>1</td><td>Спец.разделы мат.анализа</td><td>Зачет</td><td>?</td><td>Кацуба В.С.</td>
             </tr>
             <tr>
-                <td>_</td>
+                <td>2</td><td>Web-программирование</td><td>Зачет</td><td>?</td><td>Лобов А.В.</td>
             </tr>
             <tr>
-                <td>3</td><td>1</td><td>Доп.разделы мат.анализа</td><td>Экзамен</td><td>4</td><td>Кацуба В.С.</td>
-            </tr>
-            <tr>
-                <td></td><td>2</td><td>Программирование</td><td>Экзамен</td><td>5</td><td>Шиманский С.А.</td>
-            </tr>
-            <tr>
-                <td></td><td>3</td><td>Мат. логика</td><td>Экзамен</td><td>5</td><td>Жулина О.И.</td>
-            </tr>
-                <td>_</td>
-            <tr>
-            </tr>
-            <tr>
-                <td>4</td><td>1</td><td>Спец.разделы мат.анализа</td><td>Зачет</td><td>?</td><td>Кацуба В.С.</td>
-            </tr>
-            <tr>
-                <td></td><td>2</td><td>Web-программирование</td><td>Зачет</td><td>?</td><td>Лобов А.В.</td>
-            </tr>
-            <tr>
-                <td></td><td>3</td><td>ОО-программирование</td><td>Экзамен</td><td>?</td><td>Лясникова С.М.</td>
+                <td>3</td><td>ОО-программирование</td><td>Экзамен</td><td>?</td><td>Лясникова С.М.</td>
             </tr>
         </table>
     </div>
@@ -262,12 +257,12 @@
             <div>
                 <label>Выберите город
                     <select name="city">
-                        <option>Мурманск</option>
-                        <option>Москва</option>
-                        <option>Петроград</option>
-                        <option>Ленинград</option>
-                        <option>Санкт-Петербург</option>
-                        <option>Питер</option>
+                        <option value="mrm">Мурманск</option>
+                        <option value="msk">Москва</option>
+                        <option value="petr">Петроград</option>
+                        <option value="lenin">Ленинград</option>
+                        <option value="spb">Санкт-Петербург</option>
+                        <option value="piter">Питер</option>
                     </select>
                 </label>
             </div>
