@@ -1,0 +1,28 @@
+.help {
+    margin-top: 100px;
+    background: rgba(240, 99, 184, 0.15);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.help .image {
+    margin-top: 30px;
+    margin: 30px auto 30px 10px;
+}
+
+.help .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 480px;
+    margin-left: 40px;
+    margin-right: 60px;
+}
+
+.help .text .description {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 160%;
+    
+}
