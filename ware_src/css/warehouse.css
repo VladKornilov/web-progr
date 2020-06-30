@@ -1,0 +1,28 @@
+html {
+    font-family: Avenir;
+    font-style: normal;
+}
+
+body {
+    padding-top: 62px;
+    padding-left: 15%;
+    padding-right: 15%;
+    background: #E5E5E5;
+}
+
+div, p, h1, h2, h3, h4, h5, h6, input, label, form, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Helvetica';
+    font-style: normal;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 110%;
+}

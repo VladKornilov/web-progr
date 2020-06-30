@@ -1,0 +1,87 @@
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    flex-grow: 1;
+}
+
+
+.header .logo img {
+    width: 49px;
+    height: 35px;
+    /*display: inline-block;*/
+}
+
+.header .navbar {
+    flex-grow: 3;
+    /* display: flex;
+    justify-content: flex-start; */
+    
+}
+
+.header .menu-item {
+    text-decoration: none;
+    color: #4B5D68;
+    font-size: 16px;
+    /* font-weight: bold; */
+    font-weight: 500;
+    padding: 20px;
+    /* position: relative; */
+    transition: color ease-out 0.3s;
+}
+
+.header .about {
+    font-weight: 800;
+}
+
+.header .request {
+    
+    /* padding: 20px; */
+    /* flex-grow: 1; */
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 3px 5px gray ;
+}
+
+.header .request a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #4B5D68;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.header  a.menu-item:hover {
+    color: #16ca1f;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 3px 5px gray;
+    
+}
+.header .request :hover {
+    color: #16ca1f;
+}
+
+/* .header  a.menu-item::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 2px;
+    background: transparent;
+    position: absolute;
+    bottom: -3px;
+    left: 10px; 
+    right:10px;
+    transition: background ease-out 0.3s, bottom ease-out 0.3s;
+} */
+
+
+/* a:-webkit-any-link {
+    cursor: pointer;
+  } */
