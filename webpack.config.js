@@ -11,10 +11,10 @@ const dist = path.resolve(__dirname, 'dist');
 module.exports = {
   mode: 'development',
   entry: {
-    index: ['./src/index.js', hotMiddlewareScript],
+    index: ['./ware_src/index.js', hotMiddlewareScript],
     about: ['./src/about.js', hotMiddlewareScript],
     hedgehog: ['./src/hedgehog.js', hotMiddlewareScript],
-    warehouse: ['./ware_src/warehouse.js', hotMiddlewareScript]
+    //warehouse: ['./ware_src/warehouse.js', hotMiddlewareScript]
   },
   output: {
     filename: '[name].bundle.js',
@@ -132,7 +132,7 @@ module.exports = {
       title: 'About HTML'
     }),
     new HtmlWebpackPlugin({
-      template: __dirname + '/src/index.html',
+      template: __dirname + '/ware_src/index.html',
       filename: 'index.html',
       inject: 'body',
       chunks: ['index'],
@@ -145,13 +145,13 @@ module.exports = {
       chunks: ['hedgehog'],
       title: 'hedgehog HTML'
     }),
-    new HtmlWebpackPlugin({
-      template: __dirname + '/ware_src/warehouse.html',
-      filename: 'warehouse.html',
-      inject: 'body',
-      chunks: ['warehouse'],
-      title: 'warehouse HTML'
-    }),
+    // new HtmlWebpackPlugin({
+    //   template: __dirname + '/ware_src/warehouse.html',
+    //   filename: 'warehouse.html',
+    //   inject: 'body',
+    //   chunks: ['warehouse'],
+    //   title: 'warehouse HTML'
+    // }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
