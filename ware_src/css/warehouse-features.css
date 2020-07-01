@@ -16,58 +16,65 @@
     font-size: 18px;
 }
 
-.features .grid {
+.features .table {
     margin-left: 90px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.features .table .row {
+    display: flex;
+    justify-content: space-between;
 }
 
 
-.features .grid .block {
+.features .table .block {
     background-repeat: no-repeat;
+    background-size: 95%;
     position: relative;
-    /* width: 100%; */
-    height: 350px;
+    width: 400px;
+    height: 340px;
     display: flex;
-    align-items: stretch;
+    align-items: center;
     /* margin: 75; */
 }
 
-.features .grid .first {
+.features .table .first {
     background-image: url("/images/feature1.png");
 }
-.features .grid .second {
+.features .table .second {
     background-image: url("/images/feature2.png");
 }
-.features .grid .third {
+.features .table .third {
     background-image: url("/images/feature3.png");
 }
-.features .grid .fourth {
+.features .table .fourth {
     background-image: url("/images/feature4.png");
 }
 
 
 
-.features .grid .block .image {
+.features .table .block .image {
     position: absolute;
-    top: 100px;
+    top: 80px;
     left: -90px;
 }
 
-.features .grid .block .text {
+.features .table .block .text {
     margin-top: 50px;
-    margin-left: 170px;
+    margin-left: 160px;
     margin-right: 20px;
     /* margin-top: 0; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: flex-start;
+    width: 180px;
     /* align-items: center; */
 }
 
 
-.features .grid .block a {
+.features .table .block a {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,7 +83,7 @@
     padding: 20px;
 }
 
-.features .grid .block a:hover {
+.features .table .block a:hover {
     background-color: white;
     border-radius: 30px;
     box-shadow: 0px 3px 5px gray;

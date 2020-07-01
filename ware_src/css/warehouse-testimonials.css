@@ -11,22 +11,75 @@
     align-items: flex-start;
     padding: 80px;
 }
-
-
-
-.testimonials .comment-row .comment-block {
-    background: white;
-    border-radius: 20px;
+.testimonials .comment-row {
+    margin-top: 50px;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+
 }
 
-.testimonials .comment-row .comment-block .comment {
+
+.testimonials .comment-row .comment {
+    
     background: white;
+    box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+    border: 1px solid #9C69E2;
+    box-sizing: border-box;
     border-radius: 20px;
+    padding: 70px 60px;
+    margin-right: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    height: fit-content;
+}
+
+.testimonials .comment-row .active-comment {
+    width: 600px;
+}
+
+.testimonials .comment-row .inactive-comment {
+    width: 400px;
+    /* max-height:100px; */
+    overflow:hidden;
+
+    
+}
+/* .testimonials .comment-row .inactive-comment:after {
+    content:"";
+    display:block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    border: #f00 dotted 1px;
+    background: linear-gradient(to bottom, rgba(221,221,255,0), rgba(221,221,255,1));
+    -web
+} */
+
+.testimonials .comment-row .author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-items: flex-start; */
+}
+.testimonials .comment-row .author .name {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.testimonials .comment-row .text {
+    margin-left: 30px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 18px;
+    line-height: 180%;
+    max-height: 96px;
 }

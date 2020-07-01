@@ -47,3 +47,111 @@ a:hover {
 .strong {
     font-weight: 800 !important;
 }
+
+#chat {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    border-radius: 50%;
+}
+#chat:hover {
+    cursor: pointer
+}
+
+#openchat {
+    background: #9C69E2;
+    position: fixed;
+    bottom: 15%;
+    right: 5%;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#openchat .header {
+    font-size: 18px;
+}
+
+#openchat #chatcontent {
+    width: 300px;
+    height: 300px;
+    overflow-y: scroll;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#openchat .message {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#openchat .message.left {
+    flex-direction: row;
+}
+#openchat .message.right {
+    flex-direction: row-reverse;
+}
+
+#openchat .message .avatar {
+    width: 50px;
+    height: 50px;
+}
+
+#openchat .message .avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#openchat .message .data {
+    padding: 10px;
+    margin: 0 20px;
+    min-width: fit-content;
+    
+    border-radius: 15px;
+    position: relative;
+    background: #ecf6fb;
+    
+}
+
+#openchat .message .data .body {
+    font-size: 14px;
+    max-width: 150px;
+    overflow-x:hidden;
+}
+
+#openchat .message.left .data::before {
+    content: '';
+    display: block;
+    transform: rotate(45deg);
+    /* z-index: -1; */
+    width: 10px;
+    height: 10px;
+    top: 20px;
+    left: -5px;
+    /* left: 60px; */
+    background: #ecf6fb;
+    position: absolute;
+    
+}
+
+#openchat .message.right .data::after {
+    content: '';
+    display: block;
+    transform: rotate(45deg);
+    /* z-index: -1; */
+    width: 17px;
+    height: 17px;
+    right: -8.5px;
+    background: #ecf6fb;
+    position: absolute;
+    top: 20px;
+}
+
+#openchat textarea {
+    width: 200px;
+    height: 70px;
+    resize: none;
+    border-radius: 10px;
+}
