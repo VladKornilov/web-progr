@@ -9,18 +9,22 @@
     align-items: center;
 }
 
+@media screen and (max-width: 1200px) {
+    .help {
+        flex-direction: column;
+    }
+}
+
 .help .image {
-    margin-top: 30px;
-    margin: 30px auto 30px 10px;
+    padding: 20px;
 }
 
 .help .textblock {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 480px;
-    margin-left: 40px;
-    margin-right: 60px;
+    /* max-width: 480px; */
+    padding: 50px;
 }
 
 .help .textblock .text {
