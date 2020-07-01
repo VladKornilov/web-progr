@@ -4,9 +4,6 @@ html {
 }
 
 body {
-    padding-top: 0px;
-    padding-left: 15%;
-    padding-right: 15%;
     background: linear-gradient(to bottom, #F5F9FB, white);
 }
 
@@ -37,4 +34,16 @@ h3 {
     font-weight: normal;
     font-size: 24px;
     line-height: 130%;
+}
+
+a {
+    text-decoration: none;
+    transition: color ease-out 0.3s;
+}
+a:hover {
+    color: #16ca1f !important;
+}
+
+.strong {
+    font-weight: 800 !important;
 }

@@ -1,5 +1,7 @@
 
 .header .container {
+    padding-left: 15%;
+    padding-right: 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,18 +26,13 @@
 }
 
 .header .menu-item {
-    text-decoration: none;
     color: #4B5D68;
     font-size: 16px;
     /* font-weight: bold; */
     font-weight: 500;
     padding: 20px;
     /* position: relative; */
-    transition: color ease-out 0.3s;
-}
-
-.header .about {
-    font-weight: 800;
+    
 }
 
 .header .request {
@@ -51,7 +48,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    text-decoration: none;
+    
     color: #4B5D68;
     font-size: 16px;
     padding: 20px;
@@ -61,7 +58,6 @@
     color: #16ca1f;
     background-color: white;
     border-radius: 30px;
-    box-shadow: 0px 3px 5px gray;
     
 }
 .header .request :hover {

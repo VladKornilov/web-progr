@@ -1,3 +1,5 @@
+import './images/banner.svg'
+
 import './images/feature1.png'
 import './images/feature2.png'
 import './images/feature3.png'
@@ -9,7 +11,8 @@ import './css/warehouse-description.css'
 import './css/warehouse-help.css'
 import './css/warehouse-features.css'
 import './css/warehouse-testimonials.css'
-// import './css/warehouse-enemies.css'
-// import './css/warehouse-life.css'
-// import './css/warehouse-chat.css'
-// import './css/warehouse-register.css'
+import './css/warehouse-signup.css'
+import './css/warehouse-footer.css'
+
+import '@fortawesome/fontawesome-free/js/all'
+import "@fortawesome/fontawesome-free/css/all.min.css"

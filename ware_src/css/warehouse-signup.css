@@ -1,0 +1,55 @@
+.signup {
+    
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 150px;
+    
+    /* border-top: ; */
+    /* ; */
+}
+
+.signup .border {
+    border-top: 2px solid #9C69E2;
+    opacity: 0.2;
+    padding-top: 100px;
+}
+
+.signup .tryforfree {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup .tryforfree .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 90px;
+}
+
+.signup .tryforfree .buttons {
+    display: flex;
+}
+
+.signup .tryforfree .buttons .learnmore {
+    margin-right: 30px;
+    background-color: #F063B8;
+    color: #FFFFFF;
+    border-radius: 30px;
+}
+
+.signup .tryforfree .buttons .request {
+    background-color: white;
+    color: #212353;
+    border-radius: 30px;
+    box-shadow: 0px 3px 5px gray;
+}
+
+.signup .tryforfree .buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 20px;
+}
