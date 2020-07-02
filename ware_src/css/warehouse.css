@@ -66,6 +66,7 @@ a:hover {
     border-radius: 10px;
     padding: 10px;
     text-align: center;
+    visibility: hidden;
 }
 
 #openchat .header {

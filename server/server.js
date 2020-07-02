@@ -33,7 +33,7 @@ app.engine('hbs', expressHbs({
   //layoutsDir: 'server/views/layouts',
   //partialsDir: 'server/views/partials',
   layoutsDir: path.join(__dirname, '/views/layouts'),
-  //partialsDir: path.join(__dirname, '/views/partials'),
+  partialsDir: path.join(__dirname, '/views/partials'),
   defaultLayout: 'layout',
   extname: 'hbs'
 }));
@@ -93,24 +93,26 @@ app.delete('/hello-world', (req, res, next) => {
   res.status(200).send('ok');
 });
 
-app.get('/:name', (req, res, next) => {
-   const name = req.params.name || 'index';
-   console.log(name);
-   const fileName = `${name}.html`
-    //res.sendFile(__dirname + '/index.html');
-    const root = path.join(__dirname).replace('server', 'dist');
-    const options = {
-      dotfiles: 'deny',
-      root: root
-    }
-    res.sendFile(fileName, options, function (err) {
-      if (err) {
-        next(err)
-      } else {
-        console.log('Sent:', fileName)
-      }
-    });
-})
+app.get("/main",   (request, response) => {response.render("index", {title:"Data-Warehouse"})});
+
+// app.get('/:name', (req, res, next) => {
+//    const name = req.params.name || 'index';
+//    console.log(name);
+//    const fileName = `${name}.html`
+//     //res.sendFile(__dirname + '/index.html');
+//     const root = path.join(__dirname).replace('server', 'dist');
+//     const options = {
+//       dotfiles: 'deny',
+//       root: root
+//     }
+//     res.sendFile(fileName, options, function (err) {
+//       if (err) {
+//         next(err)
+//       } else {
+//         console.log('Sent:', fileName)
+//       }
+//     });
+// })
 
 app.listen(8080, function () {
   console.log('Example app listening on port 8080!\n');

@@ -14,7 +14,6 @@ module.exports = {
     index: ['./ware_src/index.js', hotMiddlewareScript],
     about: ['./src/about.js', hotMiddlewareScript],
     hedgehog: ['./src/hedgehog.js', hotMiddlewareScript],
-    //warehouse: ['./ware_src/warehouse.js', hotMiddlewareScript]
   },
   output: {
     filename: '[name].bundle.js',
