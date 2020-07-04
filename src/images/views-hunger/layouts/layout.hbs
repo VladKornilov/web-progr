@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hungry People - {{title}}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/hungry-people-copy.css">
+    <link rel="stylesheet" href="./css/about-us-copy.css">
+    <link rel="stylesheet" href="./css/our-team.css">
+    <link rel="stylesheet" href="./css/book-a-table.css">
+    <link rel="stylesheet" href="./css/specialties.css">
+    {{!-- <link rel="stylesheet" href="./css/delicious-menu.css"> --}}
+    <link rel="stylesheet" href="./css/private-events.css">
+    <link rel="stylesheet" href="./css/block-with-photos.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
+        </script>
+    <script>
+        var $page = $('html, body, a');
+        $('a[href*="#"]').click(function () {
+            $page.animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 1500);
+            return false;
+        });
+    </script>
+    <script>
+        $(function () {
+            $('.explore').hover(
+                function () {
+                    $('.book-table').css('background', 'none');
+                    $('.book-table').css('border', '1px solid rgba(255, 255, 255, 0.5)');
+                    $('.book-table').css('transition', '1.5s');
+                },
+                function () {
+                    $('.book-table').css('background', '#E8C300');
+                    $('.book-table').css('border', 'none');
+                }
+            )
+        });
+    </script>
+</head>
+
+<body>
+    {{>header-new}}
+    <div class="page-content">
+        {{{body}}}
+    </div>
+    {{>footer}}
+</body>
+<html>

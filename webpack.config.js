@@ -11,7 +11,7 @@ const dist = path.resolve(__dirname, 'dist');
 module.exports = {
   mode: 'development',
   entry: {
-    index: ['./ware_src/index.js', hotMiddlewareScript],
+    index: ['./src/index.js', hotMiddlewareScript],
   },
   output: {
     filename: '[name].bundle.js',

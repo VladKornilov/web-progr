@@ -1,0 +1,144 @@
+<header class="header">
+    <div class="banner">
+        <div class="display-table1-header">
+            <div class="display-table-row">
+                <a href="#!" class="display-table-cell align-middle menu-item">
+                    home
+                </a>
+                <a href="#about" class="display-table-cell align-middle menu-item">
+                    <span class="menu-link">about</span>
+                </a>
+                <a href="#team" class="display-table-cell align-middle menu-item">
+                    <span class="menu-link">team</span>
+                </a>
+                <a href="#book-now" class="display-table-cell align-middle menu-item">
+                    <span class="menu-link">booking</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="display-table2-header">
+            <div class="display-table-row">
+                <a href="#menu" class="display-table-cell align-middle menu-item">
+                    <span class="menu-link">menu</span>
+                </a>
+                <a href="#galerie" class="display-table-cell align-middle menu-item">
+                    <span class="menu-link">galerie</span>
+                </a>
+                <a href="#events" class="display-table-cell align-middle menu-item">
+                    <span class="menu-link">events</span>
+                </a>
+                <a href="#contact" class="display-table-cell align-middle menu-item">
+                    <span class="menu-link">contact</span>
+                </a>
+            </div>
+        </div>
+
+<div class="logo">
+    <a href="/">
+        <img src="./img/svg/helm.svg" alt="helm">
+    </a>
+</div>
+<div class="line line-left-horizontal"></div>
+<div class="line line-right-horizontal"></div>
+<div class="line line-left-vertical"></div>
+<div class="line line-middle-top-vertical"></div>
+<div class="line line-middle-bottom-vertical"></div>
+<div class="line line-right-vertical"></div>
+<div class="line line-middle-horizontal"></div>
+
+<div class="restaurant">
+    <span>restaurant</span>
+</div>
+
+<div class="hungry-people">
+    <span>hungry people</span>
+</div>
+
+<a href="#book-now" class="book-table">
+    book table
+</a>
+
+<!-- прокрутка до якоря book-now -->
+<!-- <script>
+                const anchors = document.querySelectorAll('a[href*="#"]')
+                for (let anchor of anchors) {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault()
+                    
+                    const blockID = anchor.getAttribute('href').substr(1)
+                    
+                    document.getElementById(blockID).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                    })
+                })
+                }
+            </script> -->
+
+<!-- прокрутка до якоря book-now и других -->
+<script>
+    var $page = $('html, body, a');
+    $('a[href*="#"]').click(function () {
+        $page.animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1500);
+        return false;
+    });
+</script>
+
+<a href="#!" class="explore">
+    explore
+</a>
+
+<script>
+    $(function () {
+        $('.explore').hover(
+            function () {
+                $('.book-table').css('background', 'none');
+                $('.book-table').css('border', '1px solid rgba(255, 255, 255, 0.5)');
+                $('.book-table').css('transition', '1.5s');
+            },
+            function () {
+                $('.book-table').css('background', '#E8C300');
+                $('.book-table').css('border', 'none');
+            }
+        )
+    });
+</script>
+
+<div class="social">
+    <div class="icons">
+        <div class="facebook">
+            <a href="http://facebook.com" target="_blank">
+                <i class="fa fa-facebook-f"></i>
+            </a>
+        </div>
+
+        <div class="twitter">
+            <a href="http://twitter.com" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </div>
+
+        <div class="insta">
+            <a href="http://instagramm.com" target="_blank">
+                <i class="fa fa-spin fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- <a href="#about"> -->
+<div class="strelka">
+    <div class="str">
+        <img src="./img/strelka.jpg" alt="strelka">
+    </div>
+</div>
+<!-- </a> -->
+
+<div class="work-time">
+    <span>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</span>
+</div>
+</div>
+</header>
