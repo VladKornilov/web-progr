@@ -7,6 +7,8 @@ const app = express();
 const config = require('../webpack.config.js');
 const compiler = webpack(config);
 const path = require('path')
+const bodyParser = require("body-parser");
+const urlencodedParser = bodyParser.urlencoded({extended: false});
 
 const hbs = require('hbs');
 const expressHbs = require("express-handlebars");
@@ -35,6 +37,13 @@ app.engine('hbs', expressHbs({
 
 
 app.get("/index", (request, response) => {response.render("index", {title:"Data Warehouse", features: features})});
+
+app.post("/submit", urlencodedParser, (request, response) => {
+  ;
+  console.log("New message in chat: " + request.body["msg"]);
+});
+
+//app.get("/", (request, response) => {response.render("index", {title:"Data Warehouse", features: features})});
 
 app.listen(8080, function () {
   console.log('Example app listening on port 8080!\n');

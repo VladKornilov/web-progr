@@ -60,6 +60,7 @@ document.getElementById('chat').onclick = function() {
     }
     else document.getElementById("openchat").hidden = true;
     // document.getElementById("chatcontent").text += "press";
+
 }
 
 document.getElementById('chatbutton').onclick = function() {
@@ -71,4 +72,10 @@ document.getElementById('chatbutton').onclick = function() {
         " Ближайший оператор освободится через inf секунд.";
         document.getElementById('chatcontent').appendChild(createMessageBlock("right", txt));
     }, 1000);
+
+    var xhr = new XMLHttpRequest();
+    var body = "msg=" + encodeURIComponent(text);
+    xhr.open("POST", "/submit", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.send(body);
 }
