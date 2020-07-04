@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.features .text {
+.features .descript {
     margin-top: 50px;
     margin-bottom: 100px;
     max-width: 450px;
@@ -20,26 +20,21 @@
     margin-left: 50px;
     
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
     min-width: 100%;
-}
-
-@media screen and (min-width: 1000px) {
-    .features .table .row {
-        display: flex;
-        justify-content: space-between;
-        margin-right: 0px;
-    }
 }
 
 
 .features .table .block {
+    /* width: 100%; */
     margin-bottom: 50px;
+    margin-right: 0;
     background-repeat: no-repeat;
-    background-size: 95%;
+    background-size: 100% 100%;
     position: relative;
-    width: 400px;
-    height: 340px;
+    /* width: 400px;
+    height: 340px; */
     display: flex;
     align-items: center;
     /* margin: 75; */
@@ -58,46 +53,44 @@
     background-image: url("/images/feature4.png");
 }
 
-@media screen and (max-width: 1000px) {
+.features .table .block .text {
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 450px;
+    width: 50%;
+}
+
+@media screen and (max-width: 1300px) {
+
     .features .table .block .image {
         position: absolute;
         top: -80px;
-        left: 90px;
+        left: 30%;
     }
 
     .features .table .block .text {
-        margin-top: 150px;
-        margin-left: 60px;
-        margin-right: 20px;
-        /* margin-top: 0; */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
-        text-align: left;
-        width: 250px;
-        /* align-items: center; */
+        margin-top: 30%;
+        margin-left: 30%;
+        margin-right: 10%;
+        
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1300px) {
     .features .table .block .image {
         position: absolute;
-        top: 80px;
+        top: 30%;
         left: -90px;
     }
 
     .features .table .block .text {
-        margin-top: 50px;
-        margin-left: 160px;
-        margin-right: 20px;
-        /* margin-top: 0; */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
-        width: 180px;
-        /* align-items: center; */
+        margin-top: 10%;
+        margin-left: 40%;
+        margin-right: 10%;
     }
 }
 
@@ -114,6 +107,7 @@
     justify-content: space-between;
     color: #4B5D68;
     font-size: 16px;
+    font-weight: 800;
     padding: 20px;
 }
 

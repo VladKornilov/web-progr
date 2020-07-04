@@ -12,8 +12,6 @@ module.exports = {
   mode: 'development',
   entry: {
     index: ['./ware_src/index.js', hotMiddlewareScript],
-    about: ['./src/about.js', hotMiddlewareScript],
-    hedgehog: ['./src/hedgehog.js', hotMiddlewareScript],
   },
   output: {
     filename: '[name].bundle.js',
@@ -123,27 +121,15 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({}),
-    new HtmlWebpackPlugin({
-      template: __dirname + '/src/about.html',
-      filename: 'about.html',
-      inject: 'body',
-      chunks: ['about'],
-      title: 'About HTML'
-    }),
-    new HtmlWebpackPlugin({
-      template: __dirname + '/ware_src/index.html',
-      filename: 'index.html',
-      inject: 'body',
-      chunks: ['index'],
-      title: 'Index HTML'
-    }),
-    new HtmlWebpackPlugin({
-      template: __dirname + '/src/hedgehog.html',
-      filename: 'hedgehog.html',
-      inject: 'body',
-      chunks: ['hedgehog'],
-      title: 'hedgehog HTML'
-    }),
+
+    // new HtmlWebpackPlugin({
+    //   template: __dirname + '/ware_src/index.html',
+    //   filename: 'index.html',
+    //   inject: 'body',
+    //   chunks: ['index'],
+    //   title: 'Index HTML'
+    // }),
+
     // new HtmlWebpackPlugin({
     //   template: __dirname + '/ware_src/warehouse.html',
     //   filename: 'warehouse.html',
