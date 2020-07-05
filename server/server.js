@@ -38,8 +38,9 @@ app.engine('hbs', expressHbs({
 
 app.get("/index", (request, response) => {response.render("index", {title:"Data Warehouse", features: features})});
 
+app.get("/features", (request, response) => {response.render("features_page", {title:"Features", features: features})});
+
 app.post("/submit", urlencodedParser, (request, response) => {
-  ;
   console.log("New message in chat: " + request.body["msg"]);
 });
 

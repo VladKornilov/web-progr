@@ -4,12 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "webpack-dev-server --open",
     "dev": "node ./server/server.js"
   },
-  "author": "Andrew Lobov",
+  "author": "VladKornilov",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.9.6",
