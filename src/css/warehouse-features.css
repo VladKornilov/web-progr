@@ -17,7 +17,7 @@
 }
 
 .features .table {
-    margin-left: 50px;
+    /* margin-left: 50px; */
     
     display: flex;
     justify-content: space-between;
@@ -30,67 +30,105 @@
     /* width: 100%; */
     margin-bottom: 50px;
     margin-right: 0;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: relative;
+    
+    
     /* width: 400px;
     height: 340px; */
     display: flex;
-    align-items: center;
+    /* flex-direction: row-reverse; */
+    align-items: stretch;
     /* margin: 75; */
 }
 
-.features .table .first {
+
+
+.features .table .block .addimage {
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.features .table .block .first {
     background-image: url("/images/feature1.png");
 }
-.features .table .second {
+.features .table .block .second {
     background-image: url("/images/feature2.png");
 }
-.features .table .third {
+.features .table .block .third {
     background-image: url("/images/feature3.png");
 }
-.features .table .fourth {
+.features .table .block .fourth {
     background-image: url("/images/feature4.png");
 }
 
 .features .table .block .text {
-    margin-bottom: 10%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    padding-bottom: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
     text-align: left;
     max-width: 450px;
-    width: 50%;
+    /* width: 50%; */
 }
 
-@media screen and (max-width: 1300px) {
+.features .table .block .addimage .image {
+    max-width: 200px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
 
-    .features .table .block .image {
-        position: absolute;
-        top: -80px;
-        left: 30%;
+@media screen and (max-width: 1318px) {
+    .features .table {
+        align-items: stretch;
+        /* flex-direction: column; */
+    }
+    .features .table .block {
+        flex-direction: column;
+    }
+
+    .features .table .block .addimage {
+        position: relative;
+        width: 100%;
+        height: 20%;
+    }
+
+    .features .table .block .addimage .image {
+        margin: 0 auto;
     }
 
     .features .table .block .text {
-        margin-top: 30%;
-        margin-left: 30%;
-        margin-right: 10%;
-        
+        height: 80%;
+        padding-top: 30%;
+        padding-left: 20%;
+        padding-right: 10%;
     }
 }
 
-@media screen and (min-width: 1300px) {
-    .features .table .block .image {
+@media screen and (min-width: 1319px) {
+
+    .features .table .block .addimage {
+        position: relative;
+        width: 20%;
+        height: 100%;
+    }
+
+    /* .features .table .block .image {
+        max-width: 200px;
         position: absolute;
         top: 30%;
-        left: -90px;
-    }
+        left: -10px;
+    } */
 
     .features .table .block .text {
-        margin-top: 10%;
-        margin-left: 40%;
-        margin-right: 10%;
+        width: 80%;
+        padding-top: 10%;
+        padding-left: 30%;
+        padding-right: 10%;
     }
 }
 

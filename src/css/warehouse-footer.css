@@ -51,12 +51,17 @@
 .footer .infolinks .media .icon {
     background: #212353;
     opacity: 0.1;
-    border-radius: 25px;
+    border-radius: 50%;
     border-width: 100px;
     padding: 12px;
     margin-right: 14px;
     color: white;
     font-size: 18px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
 }
 
 .footer .infolinks .links a {
