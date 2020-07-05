@@ -10,11 +10,12 @@
     justify-content: space-around;
     align-items: flex-start;
     padding: 80px;
+    overflow:hidden;
 }
 .testimonials .comment-row {
     margin-top: 50px;
     display: flex;
-
+    
 }
 
 
@@ -42,9 +43,9 @@
     width: 400px;
     /* max-height:100px; */
     overflow:hidden;
+}
 
     
-}
 /* .testimonials .comment-row .inactive-comment:after {
     content:"";
     display:block;

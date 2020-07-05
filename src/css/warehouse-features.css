@@ -27,7 +27,7 @@
 
 
 .features .table .block {
-    /* width: 100%; */
+    width: 50%;
     margin-bottom: 50px;
     margin-right: 0;
     
@@ -71,7 +71,7 @@
     justify-content: space-around;
     align-items: flex-start;
     text-align: left;
-    max-width: 450px;
+    /* max-width: 450px; */
     /* width: 50%; */
 }
 
@@ -88,6 +88,7 @@
         /* flex-direction: column; */
     }
     .features .table .block {
+        width: 100%;
         flex-direction: column;
     }
 
@@ -103,7 +104,7 @@
 
     .features .table .block .text {
         height: 80%;
-        padding-top: 30%;
+        padding-top: 140px;
         padding-left: 20%;
         padding-right: 10%;
     }
